@@ -22,11 +22,12 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ Return a string representation of the square. """
         return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-
+    """ Create a Square object. """
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
